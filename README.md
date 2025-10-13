@@ -60,6 +60,84 @@ You can tailor Copilot agent mode using custom instructions files:
 
 See: [Adding repository custom instructions for GitHub Copilot](https://docs.github.com/copilot/customizing-copilot/adding-custom-instructions-for-github-copilot).[4][5]
 
+Here’s how you can include **official Visual Studio Code and Microsoft docs instructions** for configuring custom agent mode in your `v0-chat-mode` README, combining the steps referenced in your Perplexity page and authoritative documentation:
+
+***
+
+# Configure Custom Agent Mode in Visual Studio Code
+
+## 1. Enable Agent Mode
+
+- **Update Visual Studio Code** to version 1.99 or newer to access agent mode and advanced chat features.
+- Open **Settings** (`Ctrl+,`), search for `"chat.agent.enabled"`, and enable it.  
+  This unlocks agent mode for autonomous planning, multi-step tasks, code edits, terminal commands, and tool invocation.[1]
+
+- **Agent Mode Workflow:**
+    - Open the **Copilot Chat** window.
+    - Select **“Agent”** from the mode dropdown.
+    - Enter a high-level prompt (e.g., “Refactor all API methods for async/await”).
+    - Copilot agent mode will operate across your codebase, planning, making edits, running tools, and iteratively resolving tasks.
+
+## 2. Configure Chat and Tools
+
+- **Additional Settings:**
+    - `chat.tools.autoApprove` (auto-approval for agent-invoked tools)
+    - `chat.agent.maxRequests` (limit agent requests per prompt)
+    - `chat.tools.terminal.autoApprove` (terminal command approval)
+- Example settings for `.vscode/settings.json`:
+    ```json
+    {
+      "chat.agent.enabled": true,
+      "chat.tools.autoApprove": true,
+      "chat.agent.maxRequests": 10
+    }
+    ```
+
+## 3. Modes Overview
+
+| Mode   | Description                        | Example Usage                               |
+|--------|------------------------------------|---------------------------------------------|
+| Ask    | Q&A, explanations, code snippets   | “How does auth work here?”                  |
+| Edit   | Multi-file code proposals/changes  | “Add error handling to payment service”      |
+| Agent  | Autonomous, multi-step planning    | “Migrate React to Vue”                      |
+| Custom | Specialized workflows, orchestration | Feature planning, CI/CD tasks                |
+
+See: [VS Code Modes Documentation][1]
+
+## 4. Create and Manage Custom Agents
+
+- Install the **Agents Toolkit extension** (Visual Studio only)
+- Create new agent projects with Microsoft 365 Agents SDK templates or use existing orchestration frameworks (Semantic Kernel, Azure AI Foundry, etc.)
+- Configure endpoints, keys, and project settings as required for agent integration
+
+> You can create agents in C#, Python, or JavaScript, define task orchestration, customize endpoints/toolchains via config files, and use MCP servers for advanced integrations.[1]
+
+## 5. Advanced Customization (SDK & Toolkit)
+
+- Select agent templates (Weather Agent, Empty Agent, etc.)
+- Integrate semantic kernel, orchestration layers, or any AI/ML platform
+- Manually define agent-to-agent communication and orchestration flows
+- Secure keys/endpoints with access controls, enable logging and monitoring for debugging
+
+## 6. Security & Best Practices
+
+- Always review terminal commands and file changes proposed by agent mode.
+- Use workspace and project settings for granular control of agent behaviors.
+
+## 7. References & Further Reading
+
+- [Agent Mode Documentation (Visual Studio)](https://learn.microsoft.com/en-us/visualstudio/ide/copilot-agent-mode?view=vs-2022)
+- [Agent Mode Chat in VS Code](https://code.visualstudio.com/docs/copilot/chat/chat-agent-mode)
+- [Microsoft 365 Agents SDK Quickstart](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/create-deploy-agents-sdk)
+- [Custom Chat Modes](https://code.visualstudio.com/docs/copilot/customization/custom-chat-modes)
+- [Agents Toolkit](https://learn.microsoft.com/en-us/microsoft-365/agents-sdk/create-new-toolkit-project-vs)
+
+***
+
+**Add these instructions directly to the top of your v0-chat-mode README for fully accurate, up-to-date configuration steps direct from official Visual Studio Code and Microsoft Docs sources.**
+
+[1](https://www.perplexity.ai/search/configure-custom-agent-mode-vi-0Dikny8PSW.l8l2RElfCuQ)
+
 ## Example Prompts for Agent Mode
 
 - “Refactor all API endpoints to use the latest authentication scheme.”
@@ -95,7 +173,5 @@ Feel free to open issues or pull requests to discuss improvements or report bugs
 ***
 
 Ready to build and orchestrate development with Copilot Agent Mode – just open this repo in VS Code and try your custom prompts and instructions!
-
-[19](https://learn.microsoft.com/en-us/training/modules/generate-documentation-using-github-copilot-tools/)
 [20](https://docs.github.com/en/copilot/how-tos/use-copilot-extensions/build-a-copilot-agent)
 [21](https://learn.microsoft.com/en-us/visualstudio/ide/copilot-chat-context?view=vs-2022)
