@@ -1,12 +1,3 @@
-# v0-chat-mode
-v0 GitHub Copilot Custom Agent Mode
-
-Here’s a comprehensive README for the `v0-chat-mode` repository, including official instructions from Visual Studio Code documentation about creating a custom agent mode for GitHub Copilot.
-
-***
-
-# v0-chat-mode
-
 **v0 GitHub Copilot Custom Agent Mode**
 
 This repository provides a foundation for building a custom agent mode with GitHub Copilot in Visual Studio Code. With agent mode, Copilot can autonomously execute complex coding tasks across your workspace using natural language instructions.
