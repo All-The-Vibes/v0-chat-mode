@@ -1,5 +1,4 @@
-**v0 GitHub Copilot Custom Agent Mode**
-
+# v0 GitHub Copilot Custom Agent Mode #
 This repository provides a foundation for building a custom agent mode with GitHub Copilot in Visual Studio Code. With agent mode, Copilot can autonomously execute complex coding tasks across your workspace using natural language instructions.
 
 ## Features
