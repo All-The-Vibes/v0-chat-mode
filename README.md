@@ -1,85 +1,218 @@
-# v0 GitHub Copilot Custom Agent Mode
+# v0 Custom Chat Mode for GitHub Copilot
 
-**Advanced Frontend Agent Mode Template for Next.js & Modern Web Tooling**
+**Bring Vercel v0's Directly Into VS Code**
 
-***
+Build high-fidelity Next.js prototypes and production-ready frontends without leaving your editor—no API calls, no copy-paste from web UIs, just pure development flow.
 
-## Purpose
+---
 
-`v0-chat-mode` provides a best-practices automation and code generation agent for web app development with Next.js (App Router) and modern tool integrations.  This assistant leverages Visual Studio Code’s Agent Mode and orchestrates code generation, scaffolding, editing, and integration tasks—built for rapid prototyping and deployment in any compatible workspace.
+## What Is This?
 
-***
+`v0-chat-mode` is a custom agent mode for GitHub Copilot that replicates the intelligent code generation, styling conventions, and Next.js best practices from **Vercel's v0** product. Instead of toggling between the v0 web interface and your code editor, you get v0's capabilities directly in VS Code through GitHub Copilot's Agent Mode.
 
-## Recommended Model Selection
+### Why Use This?
 
-For optimal agent workflow, **Claude Sonnet 4.5** is recommended as the underlying AI model for this repository’s agent mode. Claude Sonnet 4.5 provides advanced reasoning, code understanding, and multi-step orchestration capability, ensuring best-in-class results for frontend and automation tasks.
+- **No API Dependencies**: Generate v0-quality code without calling v0 or AI SDK APIs
+- **Zero Context Switching**: Stay in your editor—no copying and pasting from web UIs
+- **Production-Grade Code**: Get the same high-quality, modern Next.js patterns that v0 produces
+- **Rapid Prototyping**: Build complete features with natural language prompts
+- **Full Customization**: Extend or modify the agent mode to fit your workflow
 
-***
+### What Can It Do?
 
-## Key Usage Principles
+This custom mode generates:
+- **Next.js App Router** components with best practices
+- **Responsive UI** with Tailwind CSS and shadcn/ui
+- **Type-safe TypeScript** code with proper patterns
+- **Accessible components** following modern standards
+- **Integration code** for popular services (Supabase, Stripe, etc.)
 
-### Code Project Management
+---
 
-- Group all React/Next.js component files within Code Projects.
-- Edit files surgically: update only relevant sections, showing placeholders as needed (e.g., `// ... existing code ...`).
-- Prefer kebab-case for filenames: `my-component.tsx`.
-- Create, rename/move, and delete files using built-in agent tool actions—never manual/terminal commands.
+## Quick Start
 
-### Supported Tooling & Integrations
+### Prerequisites
 
-- Full support for Next.js (App Router), shadcn/ui, and other popular cloud/AI tools (Azure, Stripe, Supabase, Groq, xAI).
-- All configuration is handled via workspace UI or agent mode actions—no direct `.env` editing, terminal commands, or blob asset URLs.
-- Scripts for migration, seeding, or task automation go under `/scripts`.
+- **VS Code** version 1.99 or higher
+- **GitHub Copilot** extension installed and active
+- **GitHub Copilot Chat** enabled
 
-### Debugging & Reasoning
+### Installation Steps
 
-- Use `console.log("[v0] ...")` for all debug and trace output.
-- Reason “out loud” before code generation, and summarize planned changes and rationale in postambles.
+1. **Ensure VS Code is up to date**
+   - Check: `Help > About` should show version 1.99+
+   - Update if needed: `Help > Check for Updates`
 
-### Coding & Design Standards
+2. **Open GitHub Copilot Chat**
+   - Click the chat icon in the top center of VS Code
+   - Or use keyboard shortcut: `Ctrl+Alt+I` (Windows/Linux) or `Cmd+Shift+I` (Mac)
 
-- Mobile-first layouts, semantic HTML, Tailwind CSS v4 tokens.
-- Use max 2 font families, 5 color tokens; always split code into modular components.
-- For AI features, use only approved providers—see your workspace requirements.
-- Environment variables should be set according to recommended project best practices.
+3. **Access Agent Mode**
+   - Look at the bottom left of the chat panel
+   - Click **"Agent"** to reveal the mode selector
+   - Click **"Configure Modes..."**
 
-### User Experience
+4. **Create Custom Chat Mode**
+   - Select **"Create new custom chat mode file"**
+   - This creates a `.github/chatmodes` directory in your workspace
 
-- All user interaction is through the workspace—support drag/drop, file previews, GitHub push, ZIP download, deploy processes.
-- No terminal usage or command-line instructions—everything is managed in VS Code Github Copilot with custom agent mode.
+5. **Add v0 Chat Mode**
+   - **Option A**: Copy the contents of `v0.chatmode.md` from this repository and paste it into the new file
+   - **Option B**: Download `v0.chatmode.md` and drag-and-drop it into your `.github/chatmodes` directory
 
-***
+6. **Activate the Mode**
+   - Return to GitHub Copilot Chat
+   - Click the mode selector at the bottom left
+   - Select your newly created v0 chat mode
 
-## Visual Studio Code Agent Mode Setup
+You're ready to build! 🚀
 
-**Quickstart for Agent Mode Automation**
+---
 
-1. Ensure you have VS Code (v1.99+) and the GitHub Copilot extension enabled.
-2. In VS Code settings (`Ctrl+,`), enable agent mode:
-    ```json
-    {
-      "chat.agent.enabled": true,
-      "chat.tools.autoApprove": true,
-      "chat.agent.maxRequests": 15
-    }
-    ```
-3. Open Copilot Chat, select **Agent** mode.
-4. Enter high-level requests:
-    - “Refactor all API calls to use async/await”
-    - “Add end-to-end tests for user registration”
-    - “Migrate app from Express.js to Fastify”
-5. Agent mode will plan, edit, run tools, and iterate on requests autonomously—review proposed changes and approve/reject in editor.
+## Usage Examples
 
-See [VS Code Agent Mode Docs](https://code.visualstudio.com/docs/copilot/chat/chat-agent-mode) for full configuration and best practices.
+Once activated, interact with the v0 chat mode using natural language:
 
-***
+```
+"Create a responsive pricing page with three tiers"
+```
 
-## Best Practices Summary
+```
+"Build a dashboard layout with sidebar navigation and data cards"
+```
 
-- Use Code Projects for grouping/editing all code.
-- Apply mobile-first and modular design.
-- Respect all alignment and coding guidelines (see `/v0.chatmode.md` for deep detail).
-- Use agent mode and tooling for all edits, integrations, and deployments.
-- Never access terminal—use integrated agents and UI only.
+```
+"Add a contact form with validation using React Hook Form and Zod"
+```
 
-***
+```
+"Generate a blog post list with pagination and search"
+```
+
+The agent will generate complete, production-ready code following v0's conventions.
+
+---
+
+## Recommended Configuration
+
+For optimal performance, configure your VS Code settings (`Ctrl+,` or `Cmd+,`):
+
+```json
+{
+  "chat.agent.enabled": true,
+  "chat.tools.autoApprove": true,
+  "chat.agent.maxRequests": 15
+}
+```
+
+### Recommended AI Model
+
+For the best results with this custom mode, use **Claude Sonnet 4.5** (if available in your GitHub Copilot settings). Claude Sonnet 4.5 provides:
+- Superior reasoning for complex component architecture
+- Better understanding of modern Next.js patterns
+- More accurate multi-step code generation
+- Excellent TypeScript inference
+
+---
+
+## Core Principles
+
+This chat mode follows v0's established conventions:
+
+### Code Organization
+- **Modular components**: Single responsibility, composable pieces
+- **File naming**: kebab-case for all files (`my-component.tsx`)
+- **Type safety**: Full TypeScript with proper type definitions
+- **Project structure**: Organized by feature, not file type
+
+### Design Standards
+- **Mobile-first**: Responsive layouts by default
+- **Accessibility**: Semantic HTML and ARIA attributes
+- **Styling**: Tailwind CSS v4 with consistent design tokens
+- **Components**: shadcn/ui for common UI patterns
+
+### Development Workflow
+- **Surgical edits**: Update only relevant code sections
+- **Clear reasoning**: Explains changes before implementation
+- **Best practices**: Follows Next.js 14+ App Router conventions
+- **No terminal**: All operations through VS Code UI and agent tools
+
+### Supported Integrations
+- Next.js App Router
+- shadcn/ui components
+- Tailwind CSS v4
+- TypeScript
+- React Server Components
+- Popular services: Supabase, Stripe, Vercel, and more
+
+---
+
+## Features
+
+### Intelligent Code Generation
+- Generate entire features from natural language descriptions
+- Automatic file creation, editing, and organization
+- Context-aware suggestions based on your existing codebase
+
+### Design System Consistency
+- Limited color palettes (5 tokens max)
+- Maximum 2 font families per project
+- Consistent spacing and layout patterns
+
+### Quality Assurance
+- TypeScript type checking
+- Accessibility best practices
+- Performance optimization patterns
+- Error handling and validation
+
+---
+
+## Documentation
+
+For detailed guidelines, coding standards, and advanced usage, see the complete specification in `v0.chatmode.md`.
+
+---
+
+## Examples & Templates
+
+Check out the `/examples` directory (coming soon) for:
+- Common component patterns
+- Integration examples
+- Full page templates
+- Custom hook implementations
+
+---
+
+## Contributing
+
+Contributions are welcome! If you have improvements to the chat mode or want to add new patterns:
+
+1. Fork the repository
+2. Create a feature branch
+3. Update `v0.chatmode.md` with your changes
+4. Submit a pull request with examples
+
+---
+
+## Resources
+
+- [GitHub Copilot Chat Documentation](https://docs.github.com/en/copilot/using-github-copilot/asking-github-copilot-questions-in-your-ide)
+- [VS Code Agent Mode Guide](https://code.visualstudio.com/docs/copilot/chat/chat-agent-mode)
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Vercel v0](https://v0.dev)
+
+---
+
+## License
+
+MIT License - see [LICENSE](LICENSE) for details
+
+---
+
+## Acknowledgments
+
+This project is inspired by and follows the conventions established by Vercel's v0 product. It is not officially affiliated with Vercel.
+
+---
+
+**Built with ❤️ for developers who want v0 power in their editor**
