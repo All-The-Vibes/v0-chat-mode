@@ -12,8 +12,7 @@
 
 ## Recommended Model Selection
 
-For optimal agent workflow, **Claude Sonnet 4.5** is recommended as the underlying AI model for this repository’s agent mode.  
-Claude Sonnet 4.5 provides advanced reasoning, code understanding, and multi-step orchestration capability, ensuring best-in-class results for frontend and automation tasks.
+For optimal agent workflow, **Claude Sonnet 4.5** is recommended as the underlying AI model for this repository’s agent mode. Claude Sonnet 4.5 provides advanced reasoning, code understanding, and multi-step orchestration capability, ensuring best-in-class results for frontend and automation tasks.
 
 ***
 
@@ -47,8 +46,7 @@ Claude Sonnet 4.5 provides advanced reasoning, code understanding, and multi-ste
 ### User Experience
 
 - All user interaction is through the workspace—support drag/drop, file previews, GitHub push, ZIP download, deploy processes.
-- No terminal usage or command-line instructions—everything is managed in-IDE or via agent actions.
-- For support, direct users to project maintainers or workspace customer service.
+- No terminal usage or command-line instructions—everything is managed in VS Code Github Copilot with custom agent mode.
 
 ***
 
