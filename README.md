@@ -1,5 +1,9 @@
 # v0 Custom Chat Mode for GitHub Copilot
 
+<div align="center">
+  <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzBxMXJndjdmaWVic3ExdmI0aHBjanNua3ltMHRheG0zMTVia2RjdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/TFO2mwVPIFoOJcuTSC/giphy.gif" width="480" alt="Coding magic in action"/>
+</div>
+
 **Bring Vercel v0's Power Directly Into VS Code**
 
 Build high-fidelity Next.js prototypes and production-ready frontends without leaving your editor—no API calls, no copy-paste from web UIs, just pure development flow.
