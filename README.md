@@ -5,7 +5,7 @@
   
   <h2>Bring Vercel v0's Power Directly Into VS Code</h2>
   
-  <p>Build high-fidelity Next.js prototypes and production-ready frontends without leaving your editor—no API calls, no copy-paste from web UIs, just pure development flow.</p>
+  <p>Build Next.js prototypes and front end apps without leaving your editor—no API calls, no copy-paste from web UIs, just pure development flow in your existing codebase.</p>
 </div>
 
 
