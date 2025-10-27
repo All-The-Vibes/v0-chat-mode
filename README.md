@@ -1,6 +1,6 @@
 # v0 Custom Chat Mode for GitHub Copilot
 
-**Bring Vercel v0's Directly Into VS Code**
+**Bring Vercel v0's Power Directly Into VS Code**
 
 Build high-fidelity Next.js prototypes and production-ready frontends without leaving your editor—no API calls, no copy-paste from web UIs, just pure development flow.
 
@@ -14,6 +14,7 @@ Build high-fidelity Next.js prototypes and production-ready frontends without le
 
 - **No API Dependencies**: Generate v0-quality code without calling v0 or AI SDK APIs
 - **Zero Context Switching**: Stay in your editor—no copying and pasting from web UIs
+- **Visual-to-Code**: Paste screenshots, wireframes, or design mockups directly in chat to generate matching implementations
 - **Production-Grade Code**: Get the same high-quality, modern Next.js patterns that v0 produces
 - **Rapid Prototyping**: Build complete features with natural language prompts
 - **Full Customization**: Extend or modify the agent mode to fit your workflow
@@ -26,6 +27,7 @@ This custom mode generates:
 - **Type-safe TypeScript** code with proper patterns
 - **Accessible components** following modern standards
 - **Integration code** for popular services (Supabase, Stripe, etc.)
+- **Visual-to-Code**: Paste screenshots, wireframes, or design mockups and the agent will implement matching frontends
 
 ---
 
@@ -91,6 +93,31 @@ Once activated, interact with the v0 chat mode using natural language:
 
 The agent will generate complete, production-ready code following v0's conventions.
 
+### Working with Visual Designs
+
+One of the most powerful features is the ability to work from visual references:
+
+**Paste screenshots or designs directly into the chat**, such as:
+- Figma/Sketch design mockups
+- Screenshots from other websites or apps
+- Hand-drawn wireframes or diagrams
+- Design inspiration from Dribbble or Behance
+
+Then simply ask:
+```
+"Implement this design using shadcn/ui components"
+```
+
+```
+"Create a React component matching this screenshot"
+```
+
+```
+"Build this dashboard layout with the same visual hierarchy"
+```
+
+The agent will analyze the visual elements, layout patterns, color schemes, and component structure, then generate matching code that faithfully reproduces the design while following modern best practices.
+
 ---
 
 ## Recommended Configuration
@@ -153,6 +180,12 @@ This chat mode follows v0's established conventions:
 - Generate entire features from natural language descriptions
 - Automatic file creation, editing, and organization
 - Context-aware suggestions based on your existing codebase
+
+### Visual Design Implementation
+- **Paste images directly**: Drop screenshots, mockups, or wireframes into chat
+- **Design analysis**: Automatically identifies layouts, components, and styling patterns
+- **Faithful reproduction**: Generates code that matches the visual design
+- **Design tool agnostic**: Works with Figma, Sketch, Adobe XD, hand-drawn sketches, or any visual reference
 
 ### Design System Consistency
 - Limited color palettes (5 tokens max)
