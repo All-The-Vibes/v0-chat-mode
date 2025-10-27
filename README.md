@@ -19,14 +19,59 @@ Build high-fidelity Next.js prototypes and production-ready frontends without le
 - **Rapid Prototyping**: Build complete features with natural language prompts
 - **Full Customization**: Extend or modify the agent mode to fit your workflow
 
-### What Can It Do?
+### What Can It Generate?
 
-This custom mode generates:
-- **Next.js App Router** components with best practices
-- **Responsive UI** with Tailwind CSS and shadcn/ui
-- **Type-safe TypeScript** code with proper patterns
-- **Accessible components** following modern standards
-- **Integration code** for popular services (Supabase, Stripe, etc.)
+This custom mode creates **modern, production-ready web applications** across a wide range of categories:
+
+#### **Application Types**
+
+**E-commerce & Business**
+- Shopping carts and product catalogs
+- Checkout flows with Stripe integration
+- Pricing pages and landing pages
+- Business websites with lead generation
+
+**Content & Media Platforms**
+- Blog platforms with posts and pagination
+- Marketing and promotional websites
+- Portfolio and showcase sites
+- Documentation sites and knowledge bases
+
+**SaaS & Dashboards**
+- Admin dashboards with data visualization
+- Analytics and metrics dashboards
+- User management interfaces
+- Settings and configuration panels
+
+**Authentication & User Systems**
+- Login and registration flows
+- User profile pages and account management
+- OAuth integrations (via Supabase)
+- Protected routes and role-based access control
+
+**Database-Driven Applications**
+- Full CRUD applications (Supabase, Neon, Upstash)
+- Real-time collaborative apps
+- Search functionality (Upstash Search)
+- Redis-cached high-performance apps
+
+**AI-Powered Applications**
+- Chatbots and conversational interfaces
+- AI content generation tools
+- Image generation apps (via fal, Deep Infra)
+- LLM-powered features (Groq, Grok/xAI)
+
+#### **Technical Capabilities**
+
+- **Next.js App Router** with server and client components
+- **shadcn/ui** component library integration
+- **Tailwind CSS v4** with design tokens
+- **TypeScript** with full type safety
+- **Responsive design** with mobile-first approach
+- **Form handling** with validation (React Hook Form, Zod)
+- **API integration** (RESTful and real-time)
+- **File storage** (Vercel Blob)
+- **Payment processing** (Stripe)
 - **Visual-to-Code**: Paste screenshots, wireframes, or design mockups and the agent will implement matching frontends
 
 ---
@@ -142,6 +187,32 @@ For the best results with this custom mode, use **Claude Sonnet 4.5** (if availa
 
 ---
 
+## Supported Integrations
+
+The v0 chat mode has built-in support for popular services and can automatically check integration status, retrieve environment variables, and access live database schemas:
+
+### **Databases & Storage**
+- **Supabase** - PostgreSQL database, authentication, real-time subscriptions
+- **Neon** - Serverless PostgreSQL
+- **Upstash Redis** - Serverless Redis for caching and session storage
+- **Vercel Blob** - File and media storage
+
+### **AI & Machine Learning**
+- **Groq** - Fast LLM inference
+- **Grok (xAI)** - AI model access
+- **fal** - AI image generation and models
+- **Deep Infra** - AI model hosting and inference
+
+### **Search & Performance**
+- **Upstash Search** - Vector search and semantic search
+
+### **Payments & Commerce**
+- **Stripe** - Payment processing, subscriptions, and checkout
+
+The agent can automatically request these integrations from you if they're needed for your project, and will access live database schemas to generate accurate queries and ORM code.
+
+---
+
 ## Core Principles
 
 This chat mode follows v0's established conventions:
@@ -170,7 +241,7 @@ This chat mode follows v0's established conventions:
 - Tailwind CSS v4
 - TypeScript
 - React Server Components
-- Popular services: Supabase, Stripe, Vercel, and more
+- Popular services: Supabase, Neon, Upstash, Stripe, Groq, Grok, fal, Deep Infra, and more (see [Supported Integrations](#supported-integrations) for full list)
 
 ---
 
