@@ -56,7 +56,7 @@ Claude Sonnet 4.5 provides advanced reasoning, code understanding, and multi-ste
 
 **Quickstart for Agent Mode Automation**
 
-1. Ensure you have VS Code (v1.99+) and the GitHub Copilot extension enabled.
+1. Ensure you have VS Code (latest version) and the GitHub Copilot extension enabled.
 2. In VS Code settings (`Ctrl+,`), enable agent mode:
     ```json
     {
