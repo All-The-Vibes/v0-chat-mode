@@ -86,9 +86,21 @@ This custom mode creates **modern, production-ready web applications** across a 
 
 ### Prerequisites
 
-- **VS Code** version 1.99 or higher
-- **GitHub Copilot** extension installed and active
-- **GitHub Copilot Chat** enabled
+1. Ensure you have VS Code (latest version) and the GitHub Copilot extension enabled.
+2. In VS Code settings (`Ctrl+,`), enable agent mode:
+    ```json
+    {
+      "chat.agent.enabled": true,
+      "chat.tools.autoApprove": true,
+      "chat.agent.maxRequests": 15
+    }
+    ```
+3. Open Copilot Chat, select **Agent** mode.
+4. Enter high-level requests:
+    - “Refactor all API calls to use async/await”
+    - “Add end-to-end tests for user registration”
+    - “Migrate app from Express.js to Fastify”
+5. Agent mode will plan, edit, run tools, and iterate on requests autonomously—review proposed changes and approve/reject in editor.
 
 ### Installation Steps
 
