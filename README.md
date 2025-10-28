@@ -12,8 +12,8 @@
 
 ## Recommended Model Selection
 
-For optimal agent workflow, **Claude 3.5 Sonnet** (or latest available model) is recommended as the underlying AI model for this repository’s agent mode.  
-Claude 3.5 Sonnet provides advanced reasoning, code understanding, and multi-step orchestration capability, ensuring best-in-class results for frontend and automation tasks.
+For optimal agent workflow, **Claude Sonnet 4.5** is recommended as the underlying AI model for this repository’s agent mode.  
+Claude Sonnet 4.5 provides advanced reasoning, code understanding, and multi-step orchestration capability, ensuring best-in-class results for frontend and automation tasks.
 
 ***
 
@@ -49,16 +49,6 @@ Claude 3.5 Sonnet provides advanced reasoning, code understanding, and multi-ste
 - All user interaction is through the workspace—support drag/drop, file previews, GitHub push, ZIP download, deploy processes.
 - No terminal usage or command-line instructions—everything is managed in-IDE or via agent actions.
 - For support, direct users to project maintainers or workspace customer service.
-
-### Terminal & Command Line
-
-**For Users:**
-- No terminal usage or command-line instructions—everything is managed in-IDE or via agent actions.
-- All file operations, deployments, and configurations are handled through the v0 UI.
-
-**For v0 Agent:**
-- The agent does not use terminal commands when interacting with the v0 workspace.
-- All operations are performed through provided tools (edit, new, runCommands as needed).
 
 ***
 
