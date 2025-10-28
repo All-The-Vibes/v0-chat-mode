@@ -8,24 +8,6 @@
   <p>Build Next.js prototypes and front end apps without leaving your editor—no API calls, no copy-paste from web UIs, just pure development flow in your existing codebase.</p>
 </div>
 
----
-
-## Markdown Italic Text Examples
-
-### Using Single Asterisks for Italics
-This is *italic text with asterisks* in a sentence.
-
-### Using Single Underscores for Italics
-This is _italic text with underscores_ in a sentence.
-
-### Both Methods Work
-- *This text is italicized with asterisks*
-- _This text is italicized with underscores_
-- You can use *asterisks* or _underscores_ interchangeably
-- Example: The word *emphasis* and the word _important_ are both italic
-
----
-
 ## What Is This?
 
 `v0-chat-mode` is a custom agent mode for GitHub Copilot that replicates the intelligent code generation, styling conventions, and Next.js best practices from **Vercel's v0** product. Instead of toggling between the v0 web interface and your code editor, you get v0's capabilities directly in VS Code through GitHub Copilot's Agent Mode.
