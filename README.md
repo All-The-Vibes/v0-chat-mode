@@ -3,7 +3,7 @@
 <div align="center">
   <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzBxMXJndjdmaWVic3ExdmI0aHBjanNua3ltMHRheG0zMTVia2RjdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/TFO2mwVPIFoOJcuTSC/giphy.gif" width="250" alt="Coding magic in action"/>
   
-  <h2>Bring Vercel's v0 Directly Into VS Code</h2>
+  <h2>Bring _Vercel's v0_ Directly Into VS Code</h2>
   
   <p>Build Next.js prototypes and front end apps without leaving your editor—no API calls, no copy-paste from web UIs, just pure development flow in your existing codebase.</p>
 </div>
